@@ -1,6 +1,10 @@
 package com.example.tushar.portfolio
 
+import android.annotation.TargetApi
+import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.support.annotation.RequiresApi
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import com.example.tushar.portfolio.view.AboutFragment
@@ -13,7 +17,8 @@ class SecondActivity : AppCompatActivity() {
 
     val manager=supportFragmentManager
 
-    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener {
+        item ->
         when (item.itemId) {
             R.id.navigation_home -> {
                 message.setText(R.string.title_home)
@@ -34,9 +39,24 @@ class SecondActivity : AppCompatActivity() {
         false
     }
 
+
+
+
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+    @RequiresApi(Build.VERSION_CODES.JELLY_BEAN)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second2)
+
+        mainscreen.setOnClickListener{
+            var intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
+        exit.setOnClickListener {
+            finishAffinity()
+        }
+
+
         createfragmentabout()
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 

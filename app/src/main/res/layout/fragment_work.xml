@@ -3,13 +3,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red"
     tools:context=".view.WorkFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:text="For my projects check out my github repository https://github.com/Tusharj045"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:text="I have made several apps like-"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:text="Tip Finder"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:text="Emoji Dictionary"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:text="Mess App etc."/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 
 </FrameLayout>

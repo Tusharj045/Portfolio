@@ -19,11 +19,44 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/title_home"
-            android:background="@color/design_default_color_primary_dark"
             android:textSize="30dp"
-            android:layout_alignParentTop="true"
-            />
+            android:layout_alignParentTop="true"/>
+
     </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/navigation"
+        android:layout_height="85dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="150dp"
+                android:id="@+id/mainscreen"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@color/colorWebsiteTab"
+                android:gravity="center"
+                android:text="Main Screen"/>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:id="@+id/exit"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:background="@color/colorWebsiteTab"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="Exit"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"

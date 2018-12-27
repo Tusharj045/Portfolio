@@ -120,31 +120,53 @@
             android:layout_gravity="left"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
-            android:text="
-        Hey I am Tushar. "
-            android:textColor="@color/mycolor"
-            android:textSize="15sp"
+            android:text="    Hey, I am Tushar Jaiswal. I was born in the holy city of Allahabad (currently Prayagraj) and raised in a small town named Renukoot. It is a small town situated at a place appox. 250kms from Allahabad. Currently I am pursuing B. Tech degree in Computer Science and Engineering branch from Vellore Institute of Technology, Vellore. "
+            android:textColor="@color/black"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:fontFamily="sans-serif" />
 
 
+
     </android.support.design.widget.CoordinatorLayout>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/navigation"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="34dp"
-        android:background="@color/colorWebsiteTab"
-        android:gravity="center"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="1"
-        android:text="@string/more"
-        android:textColor="@color/cardview_light_background"
-        android:textStyle="bold" />
+        android:layout_height="85dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="150dp"
+                android:id="@+id/button2"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:background="@color/colorWebsiteTab"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="More"/>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/exitButton"
+                android:padding="10dp"
+                android:background="@color/colorWebsiteTab"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_alignParentRight="true"
+                android:text="Exit"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
 
 
 </RelativeLayout>
