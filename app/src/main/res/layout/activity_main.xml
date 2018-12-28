@@ -119,7 +119,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="left"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:text="    Hey, I am Tushar Jaiswal. I was born in the holy city of Allahabad (currently Prayagraj) and raised in a small town named Renukoot. It is a small town situated at a place appox. 250kms from Allahabad. Currently I am pursuing B. Tech degree in Computer Science and Engineering branch from Vellore Institute of Technology, Vellore. "
             android:textColor="@color/black"
             android:textSize="20sp"

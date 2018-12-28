@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.activity_second2.*
 
+
 class MainActivity : AppCompatActivity() {
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
@@ -36,11 +37,9 @@ class MainActivity : AppCompatActivity() {
             makePhoneCall("9999999999")
             //Add the number in the above string on which you want to make a call.
         }
-
-
-
-
     }
+
+    //Function for making phone calls
     fun Context.makePhoneCall(number: String) : Boolean {
         try {
             val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$number"))
